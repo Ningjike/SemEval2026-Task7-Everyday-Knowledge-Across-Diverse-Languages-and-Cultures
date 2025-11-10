@@ -39,7 +39,9 @@
     ans = response['message']['content'].strip()
 ```
 - 部分回答：
-  
+  <img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/a90ee88a-c1a2-429a-a8a4-d6471ddd9e4e" />
+  具体结果可以查看
+
 
 
 
