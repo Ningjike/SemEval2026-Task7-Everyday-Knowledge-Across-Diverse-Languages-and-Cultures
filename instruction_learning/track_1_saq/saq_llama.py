@@ -4,8 +4,8 @@ from tqdm import tqdm
 
 import time
 
-from translate_tongyi import translate_to_english
-from translate_tongyi import translate_answer_back
+from translate_qwen import translate_to_english
+from translate_qwen import translate_answer_back
 
 
 INPUT_FILE = "D:\\Pycharm\\SemEval2026\\track_1_saq\\track_1_saq_input.tsv"
@@ -90,3 +90,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
