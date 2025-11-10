@@ -1,4 +1,4 @@
-# translate_tongyi.py
+# translate_Qwen.py
 import openai
 from openai import APIError
 import pandas as pd
@@ -8,7 +8,7 @@ import time
 
 # 配置API客户端
 client = openai.OpenAI(
-    api_key="sk-bdeb6dc9862345d7bf2954835ae4ab80",
+    api_key="XXXX",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
 )
 
@@ -116,3 +116,4 @@ def translate_answer_back(english_answer: str, lang_region: str, max_retries=2) 
             break
 
     return english_answer
+
