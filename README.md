@@ -12,8 +12,8 @@
 | fa-IR    | Persian/Farsi (Iran)             | ko-KP    | Korean (North Korea)             | ko-KR    | Korean (South Korea)             | el-GR    | Greek (Greece)                   |
 | en-GB    | English (United Kingdom)         | en-US    | English (United States)          | es-ES    | Spanish (Spain)                  | es-MX    | Spanish (Mexico)                 |
 | ar-EG    | Arabic (Egypt)                   | ar-MA    | Arabic (Morocco)                 | ar-SA    | Arabic (Saudi Arabia)            | ja-JP    | Japanese (Japan)                 |
-|    \     | Thai (Thailand)                  |    \     | Bengali (India)                  | tl-PH    | Tagalog (Philippines)            | ta-LK    | Tamil (Sri Lanka)                |
-| ta-SG    | Tamil (Singapore)                | ms-SG    | Malay (Singapore)                | zh-SG    | Singaporean Mandarin (Singapore) |     \    | Taiwanese Mandarin (Taiwan)      |
+|    /     | Thai (Thailand)                  |    /     | Bengali (India)                  | tl-PH    | Tagalog (Philippines)            | ta-LK    | Tamil (Sri Lanka)                |
+| ta-SG    | Tamil (Singapore)                | ms-SG    | Malay (Singapore)                | zh-SG    | Singaporean Mandarin (Singapore) |     /    | Taiwanese Mandarin (Taiwan)      |
 | en-AU    | English (Australia)              | es-EC    | Spanish (Ecuador)                | eu-ES    | Basque (Basque Country, Spain)   | bg-BG    | Bulgarian (Bulgaria)             |
 | fr-FR    | French (France)                  | ga-IE    | Irish (Ireland)                  | sv-SE    | Swedish (Sweden)                 | cy-GB    | Welsh (Wales, UK)                |
 
@@ -40,8 +40,12 @@
     ans = response['message']['content'].strip()
 ```
 - 部分回答：
-  <img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/a90ee88a-c1a2-429a-a8a4-d6471ddd9e4e" />
+  
+  <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/a90ee88a-c1a2-429a-a8a4-d6471ddd9e4e" />
+
   具体结果可以查看instruction_learning/track_1_saq/answers.tsv
+- 其中"ga"语言的回答未能正确生成，由于Qwen不支持‘ga’。除了Qwen-MT的API，可以尝试DeepL、Google等翻译器的API，由于笔者没有国外账户，无法使用，同时若可调用baidu企业至尊版通用翻译API也可完成翻译。
+- 之后可尝试直接调用大模型设计指令完成翻译，通过试验发现，Qwen-MT模型其实是能够完成翻译的（可实现翻译为英文），但由英文进行反向翻译时出现报错，或许可通过手动设置指令指示目标语言完成翻译。
   
 
 
