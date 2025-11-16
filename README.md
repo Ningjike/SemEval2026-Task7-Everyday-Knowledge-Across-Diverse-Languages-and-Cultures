@@ -53,8 +53,28 @@
 
 ---
 ## Track2:MCQ
+1. 将option与question拼接进行判断：
+   - 翻译为轴枢语言:
+    见代码process_questions1.py及mcq1.py
+   - 直接拼接：
+    见代码process_questions2.py
+ 2. 将question与4个option一起加入prompt，让模型直接回答：
+     见代码process_questions3.py
+ 3. 上下文学习：
+    首先随机生成伪标签，之后将若干条demonstrations（question and label）作为指令上下文指示模型回答，之后根据回答更新标签。
+    见代码process_questions4.py及mcq4.py
+### 结果：
+- 拼接question与option：
+  1. 使用轴枢语言：
+     <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/c040aea0-fcd8-413e-bae6-d66e59d099b5" />
 
+  2. 不使用轴枢语言：
+     
+- 直接进行多选指令学习：
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/743fc693-b3ce-44aa-9ab4-3ead1a3e7df2" />
 
+- 上下文学习：
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/8ef0a9b0-d775-42bc-9291-88a2cf572234" />
 
  
   
