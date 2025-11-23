@@ -60,7 +60,8 @@
 采用Lora微调，基础模型为Qwen3-4B，执行代码见track_1_instruction_tuning.ipynb
 模型部分结果展示：
 
-<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/aa73e8df-01bf-473f-9f3c-627ad547a510" />
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/6ac399b3-a1a5-43bf-ba48-84a0293e48cc" />
+
 
 
 
